@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">My Portfolio</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Learnings</a></li>
+          <li><a href="#projects">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">My Portfolio</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.jpeg" alt="Yagya Soni profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Yagya Soni</h1>
+        <p class="section__text__p2">Software Developer Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/YagyaSoniResume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/yagya-soni-7137a5215/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/yagyasoni'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <br />
+      <br />
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/graduation.avif"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <br />
+              <p>
+                <strong>IIT ( BHU ), Varanasi</strong> - 8.39<br />
+                [ BTech - Chemical Engg. ]
+              </p>
+              <br />
+              <p>Higher Secondary - 87.20 %</p>
+              <br />
+              <p>Secondary - 91.20 %</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <br />
+              <p>Software Developer Engineer 1 [ June'23 - Present ]</p>
+              <br />
+              <p>Microsoft Future Ready Talent Intern [ Oct'21 - Dec'21 ]</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Achievements</h3>
+              <br />
+              <p>
+                One of the <strong>Top Performer</strong> from IIT BHU to
+                qualify Publicis Sapient Jumpstart'22
+              </p>
+              <br />
+              <p>
+                Had earned one <strong>bronze medal</strong> and secured first
+                position in <strong>TAEKWONDO</strong> [ IIT BHU ]
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Curious, enthusiastic and motivated individual with the ability to
+              quickly master new development tool. Highly interested in solving
+              real-world problems, with an attitude of streamlining. Well
+              experienced in HTML, CSS, JavaScript and React Js for frontend
+              development, MySQL and Git. Apart from that, I love sketching and
+              a music lover. With my learning of never giving up so easily I can
+              really contribute to the organization which I work in.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    </section>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Learnings</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">SKILLS</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React Js</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Ant Design</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Work</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container"></div>
+            <h2 class="experience-sub-title project-title">Personal Project</h2>
+            <div class="btn-container2">
+              <p>
+                Developed a responsive budget tracking web application to
+                empower users to manage their finances effectively.
+              </p>
+              <p>
+                Implemented real-time expense tracking and categorized budget
+                allocation, enhancing user's financial planning.
+              </p>
+              <p>Techstack Used : HTML5, CSS3, ReactJs.</p>
+              <div class="btn-container1">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/yagyasoni/BUDGET-BUDDY-Your-own-Expense-Tracker'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://64d3ababbb89737ae86173c9--tourmaline-pixie-98bb70.netlify.app/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container"></div>
+            <h2 class="experience-sub-title project-title">Company</h2>
+            <div class="btn-container2">
+              <p>
+                Currently working in the frontend team of the finance section in
+                the IT Software Department of the company.
+              </p>
+              <p>
+                Developed the user friendly sub-module pages using ReactJs and
+                Ant Design for the finance live project. Also, created the
+                required UI.
+              </p>
+              <p>Solved various bugs assigned for the different projects.</p>
+              <p>
+                One among the 2 out of 20 joinees to work on the live project.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:yagyasony@gmail.com">Gmail</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/yagya-soni-7137a5215/"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright &#169; 2023 Yagya Soni. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
